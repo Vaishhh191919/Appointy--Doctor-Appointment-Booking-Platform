@@ -1,99 +1,27 @@
-🏥 Appointy – Doctor Appointment Booking Platform
+# 🏥 Appointy – Doctor Appointment Booking Platform  
 
-A full-stack MERN application that allows patients to seamlessly book doctor appointments, with real-time slot management, secure payments, and an intuitive admin dashboard.
+A **full-stack MERN application** that allows patients to seamlessly book doctor appointments, with real-time slot management, secure payments, and an intuitive admin dashboard.  
 
-✨ Features
+## ✨ Features  
+- 👩‍⚕️ **Multi-role Authentication (JWT)** – Patients, Doctors, and Admins with role-based access.  
+- 📅 **Real-time Slot Management** – Doctors can set availability, approve/reject bookings.  
+- 🛡 **Secure Authentication** – JWT-based login/registration system.  
+- 💳 **Online Payments** – Integrated **Razorpay/Stripe** for smooth transactions.  
+- 🖼 **Image Uploads** – Multer + Cloudinary for doctor profile pictures and document management.  
+- 📊 **Admin Dashboard** – Manage doctors, patients, and appointments.  
+- 🔎 **Advanced Search & Filters** – Find doctors by specialization, availability, and location.  
+- 📱 **Responsive Frontend** – Built with React + Tailwind CSS for a modern UI.  
 
-👩‍⚕️ Multi-role Authentication (JWT) – Patients, Doctors, and Admins with role-based access.
+---
 
-📅 Real-time Slot Management – Doctors can set availability, approve/reject bookings.
+## 🛠️ Tech Stack  
+**Frontend:** React, Tailwind CSS  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB (Mongoose ODM)  
+**Authentication:** JWT  
+**File Storage:** Multer + Cloudinary  
+**Payments:** Razorpay / Stripe  
+**Other Tools:** REST APIs, Axios  
 
-🛡 Secure Authentication – JWT-based login/registration system.
+---
 
-💳 Online Payments – Integrated Razorpay/Stripe for smooth transactions.
-
-🖼 Image Uploads – Multer + Cloudinary for doctor profile pictures and document management.
-
-📊 Admin Dashboard – Manage doctors, patients, and appointments.
-
-🔎 Advanced Search & Filters – Find doctors by specialization, availability, and location.
-
-📱 Responsive Frontend – Built with React + Tailwind CSS for a modern UI.
-
-🛠️ Tech Stack
-
-Frontend: React, Tailwind CSS
-Backend: Node.js, Express.js
-Database: MongoDB (Mongoose ODM)
-Authentication: JWT
-File Storage: Multer + Cloudinary
-Payments: Razorpay / Stripe
-Other Tools: REST APIs, Axios
-
-⚙️ Installation & Setup
-
-Clone the repo
-
-git clone https://github.com/your-username/appointy.git
-cd appointy
-
-
-Install dependencies
-
-# Backend
-cd server
-npm install
-
-# Frontend
-cd ../client
-npm install
-
-
-Setup environment variables
-Create .env in server/ and add:
-
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-CLOUDINARY_CLOUD_NAME=xxxx
-CLOUDINARY_API_KEY=xxxx
-CLOUDINARY_API_SECRET=xxxx
-RAZORPAY_KEY_ID=xxxx
-RAZORPAY_KEY_SECRET=xxxx
-
-
-Run the app
-
-# Run backend
-cd server
-npm start
-
-# Run frontend
-cd ../client
-npm start
-
-📸 Screenshots (Optional)
-
-🏠 Landing Page
-
-📅 Appointment Booking Page
-
-📊 Admin Dashboard
-
-🚀 Future Enhancements
-
-AI-based doctor recommendations.
-
-Prescription uploads & health record management.
-
-Email & SMS reminders for patients.
-
-Video consultation support.
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo and submit a PR.
-
-📜 License
-
-This project is licensed under the MIT License.
