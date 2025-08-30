@@ -101,16 +101,26 @@ const doctorList = async (req, res) => {
     }
 
 }
+ const deleteDoctorById = async (req, res) => {
+  try {
+    const doctor = await doctorModel.findByIdAndDelete(req.params.id);
+    if (!doctor) return res.status(404).json({ message: 'Doctor not found' });
 
-// API to change doctor availablity for Admin and Doctor Panel
-const changeAvailablity = async (req, res) => {
+    res.status(200).json({ message: 'Doctor deleted successfully' });
+  } catch (err) {
+    res.status(500).json({ message: 'Server error', error: err.message });
+  }
+}
+
+// API to change doctor availability for Admin and Doctor Panel
+const changeAvailability = async (req, res) => {
     try {
 
         const { docId } = req.body
 
         const docData = await doctorModel.findById(docId)
         await doctorModel.findByIdAndUpdate(docId, { available: !docData.available })
-        res.json({ success: true, message: 'Availablity Changed' })
+        res.json({ success: true, message: 'Availability Changed' })
 
     } catch (error) {
         console.log(error)
@@ -195,9 +205,10 @@ export {
     appointmentsDoctor,
     appointmentCancel,
     doctorList,
-    changeAvailablity,
+    changeAvailability,
     appointmentComplete,
     doctorDashboard,
     doctorProfile,
+    deleteDoctorById,
     updateDoctorProfile
 }

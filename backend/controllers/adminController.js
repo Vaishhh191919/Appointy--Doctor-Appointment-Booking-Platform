@@ -40,7 +40,21 @@ const appointmentsAdmin = async (req, res) => {
     }
 
 }
-
+const deleteDoctor = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const doctor = await doctorModel.findByIdAndDelete(id);
+    
+    if (!doctor) {
+      return res.json({ success: false, message: 'Doctor not found' });
+    }
+    
+    res.json({ success: true, message: 'Doctor deleted successfully' });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
 // API for appointment cancellation
 const appointmentCancel = async (req, res) => {
     try {
@@ -124,7 +138,21 @@ const allDoctors = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+const clearCompletedAppointments = async (req, res) => {
+  try {
+    const result = await appointmentModel.deleteMany({
+      $or: [{ cancelled: true }, { isCompleted: true }]
+    });
+    
+    res.json({ 
+      success: true, 
+      message: `Cleared ${result.deletedCount} appointments successfully` 
+    });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
 // API to get dashboard data for admin panel
 const adminDashboard = async (req, res) => {
     try {
@@ -154,5 +182,7 @@ export {
     appointmentCancel,
     addDoctor,
     allDoctors,
-    adminDashboard
+    adminDashboard,
+    deleteDoctor,
+    clearCompletedAppointments
 }
