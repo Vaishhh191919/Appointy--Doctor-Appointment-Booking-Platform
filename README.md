@@ -57,23 +57,14 @@ appointy/
 
 ## 📷 Screenshots
 
-> **Patient Frontend**
 
-| Home Page | Book Appointment |
-|-----------|-----------------|
-| ![Home Page] (<img width="1616" height="820" alt="image" src="https://github.com/user-attachments/assets/de67c305-2050-404a-a68b-3c4016990e58" />)
- | ![Book Appointment] (<img width="1792" height="879" alt="image" src="https://github.com/user-attachments/assets/c5338515-aed5-43fa-9d6e-1e5f77f8829e" />)|
+<img width="1616" height="820" alt="image" src="https://github.com/user-attachments/assets/de67c305-2050-404a-a68b-3c4016990e58" />
+
+ <img width="1792" height="879" alt="image" src="https://github.com/user-attachments/assets/c5338515-aed5-43fa-9d6e-1e5f77f8829e" />
 
 <img width="717" height="546" alt="image" src="https://github.com/user-attachments/assets/a7c97bb1-4c5a-4c9c-ac3d-1a8791a51e5a" />
 
-> **Admin Panel**
-
-| Dashboard | Doctor Management |
-|-----------|-----------------|
-| ![Admin Dashboard](<img width="1911" height="701" alt="image" src="https://github.com/user-attachments/assets/77d3d6f5-f1f9-48ab-b641-221760c6cf6f" />
-) | ![Doctor Management](![Uploading image.png…]()
-) |
-
+<img width="1911" height="701" alt="image" src="https://github.com/user-attachments/assets/77d3d6f5-f1f9-48ab-b641-221760c6cf6f" />
 
 
 ---
@@ -102,3 +93,4 @@ appointy/
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
+
