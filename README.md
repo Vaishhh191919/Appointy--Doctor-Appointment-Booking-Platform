@@ -50,7 +50,7 @@ appointy/
 
 | Frontend | Backend | Database | Authentication | Others |
 |----------|--------|----------|----------------|--------|
-| React    | Node.js | MongoDB | JWT            | Tailwind CSS, Redis (optional) |
+| React    | Node.js | MongoDB | JWT            | Tailwind CSS |
 | Axios    | Express | Mongoose |                | REST APIs |
 
 ---
@@ -96,5 +96,6 @@ appointy/
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
+
 
 
